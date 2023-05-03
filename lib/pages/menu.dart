@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/drawer.dart';
+
+
+
 class MyHomePage extends StatelessWidget {
   const MyHomePage({Key? key}) : super(key: key);
 
@@ -20,6 +24,7 @@ class MyHomePage extends StatelessWidget {
           'Money Tracker',
         ),
       ),
+      drawer: const DrawerMenu(), // Menambahkan drawer pada halaman
       body: SingleChildScrollView( // Widget wrapper yang dapat discroll
         child: Padding( 
           padding: const EdgeInsets.all(10.0), // Set padding dari halaman
@@ -89,6 +94,13 @@ class MyHomePage extends StatelessWidget {
                           content: Text("Kamu telah menekan tombol Tambah Transaksi!")));
                       },
                       child: Container(
+                        onTap: () {
+                          Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const MyFormPage()),
+                          );
+                        }
                         padding: const EdgeInsets.all(8),
                         child: Center(
                           child: Column(

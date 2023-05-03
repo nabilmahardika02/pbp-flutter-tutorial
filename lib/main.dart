@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'menu.dart';
+import 'package:pbp_flutter_tutorial/pages/menu.dart';
 
 void main() {
   runApp(const MyApp());
