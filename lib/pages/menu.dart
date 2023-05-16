@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pbp_flutter_tutorial/pages/form.dart';
 
 import '../widgets/drawer.dart';
 
@@ -88,19 +89,13 @@ class MyHomePage extends StatelessWidget {
                     color: Colors.green,
                     child: InkWell(
                       onTap: () {
-                        ScaffoldMessenger.of(context)
-                        ..hideCurrentSnackBar()
-                        ..showSnackBar(const SnackBar(
-                          content: Text("Kamu telah menekan tombol Tambah Transaksi!")));
-                      },
-                      child: Container(
-                        onTap: () {
-                          Navigator.pushReplacement(
+                        Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
                                 builder: (context) => const MyFormPage()),
                           );
-                        }
+                      },
+                      child: Container(
                         padding: const EdgeInsets.all(8),
                         child: Center(
                           child: Column(

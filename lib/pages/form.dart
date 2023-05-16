@@ -211,12 +211,6 @@ class _MyFormPageState extends State<MyFormPage> {
                   ),
                 ),
               ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Text('Hello World!'),
-                ],
-              ),
             ),
         );
     }
