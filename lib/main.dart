@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pbp_flutter_tutorial/pages/login.dart';
 
 import 'package:pbp_flutter_tutorial/pages/menu.dart';
 
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
           // is not restarted.
           primarySwatch: Colors.green,
         ),
-        home: const MyHomePage(),
+        home: const LoginPage(),
       )
     );
   }
